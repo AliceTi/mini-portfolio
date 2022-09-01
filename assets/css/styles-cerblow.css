@@ -1,0 +1,37 @@
+#carrousel-item-one{
+  background-image: url(../img/cerblow/prez-anim-cerblow.gif);
+  background-size: cover;
+  background-position: center;
+}
+#carrousel-item-one .arrows{
+  color: var(--title-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#carrousel-item-two{
+  background-image: url(../img/cerblow/cerblow-jaquette.jpg);
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+
+#carrousel-item-three{
+  background-image: url(../img/cerblow/cerblow-specimen.jpg);
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+
+#carrousel-item-four{
+  background-image: url(../img/cerblow/cerblow-tests-01.jpg);
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+
+h1{
+  color: var(--text-color);
+}

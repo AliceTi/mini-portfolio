@@ -1,0 +1,76 @@
+#carrousel-item-one{
+  background-image: url(../img/e2c/prez-anim-e2c.gif);
+  background-size: cover;
+  background-position: center;
+}
+#carrousel-item-one .arrows{
+  color: var(--title-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#carrousel-item-two{
+  background-image: url(../img/e2c/l-etat-des-lieux.mp4);
+  background-size: cover;
+  background-position: center;
+  display: none;
+  position: relative;
+}
+
+#carrousel-item-three{
+  background-image: url(../img/e2c/le-loyer-et-les\ charges.mp4);
+  background-size: cover;
+  background-position: center;
+  display: none;
+  position: relative;
+}
+
+#carrousel-item-four{
+  background-image: url(../img/e2c/le-bail.mp4);
+  background-size: cover;
+  background-position: center;
+  display: none;
+  position: relative;
+}
+
+#carrousel-item-five{
+  background-image: url(../img/e2c/le-depart.mp4);
+  background-size: cover;
+  background-position: center;
+  display: none;
+  position: relative;
+}
+
+#carrousel-item-two video, #carrousel-item-three video, #carrousel-item-four video, #carrousel-item-five video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+
+h1{
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 500px) {
+  #carrousel-item-two video, #carrousel-item-three video, #carrousel-item-four video, #carrousel-item-five video{
+    top: 20vw;
+  }
+   
+}
+@media screen and (min-width: 576px) {
+  #carrousel-item-two video, #carrousel-item-three video, #carrousel-item-four video, #carrousel-item-five video{
+    top: 0;
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #carrousel-item-two video, #carrousel-item-three video, #carrousel-item-four video, #carrousel-item-five video{
+    height: auto;
+  }
+}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta description="PORTFOLIO - Alice TIFFAY, Graphiste multimédia | alice.tiffay@gmail.com">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon-perso.svg" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>PORTFOLIO - Alice TIFFAY</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <!-- Insert your image, according to the example size of the portfolio -->
+                            <img src="assets/img/perfil.png" alt="">
+                        </div>
+                    </div>
+
+                    <h1 class="profile__name">Alice Tiffay</h1>
+                    <h2 class="profile__profession">Graphiste multimédia</h2>
+
+                    <ul class="profile__social">
+                        <a href="https://www.instagram.com/_iceti/" target="_blank" class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alice-tiffay/" target="_blank" class="profile__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCrD6ekUWa8jWO_NbBJ8nTeg/videos" target="_blank" class="profile__social-link">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h2 class="profile__info-number">4</h2>
+                        <p class="profile__info-description">
+                            Expériences <br> pro
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h2 class="profile__info-number">3</h2>
+                        <p class="profile__info-description">
+                            Diplômes <br> obtenus
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h2 class="profile__info-number">1 max</h2>
+                        <p class="profile__info-description">de <br> curiosité</p>
+                    </div>
+                </div>
+
+                <div class="profile__buttons">
+                    <!-- Insert your CV -->
+                    <a download="" href="assets/pdf/CV juin 2022-ALICE TIFFAY.pdf" class="button">
+                        Mon CV <i class="ri-download-line"></i>
+                    </a>
+
+                    <div class="profile__buttons-small">
+                        <!-- Insert a real number plus country code -->
+                        <a href="mailto:alice.tiffay@gmail.com?subject=Demande d'informations" target="_blank" class="button button__small button__gray">
+                            <i class="ri-mail-line"></i>
+                        </a>
+                        <!-- Insert your brand name or profile -->
+                        <a href="tel:+33680400592" target="_blank" class="button button__small button__gray">
+                            <i class="ri-phone-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        Projets
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Compétences
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="assets/img/cerblow/cerblow-mains-thumbnail.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Graphisme</span>
+                                    <h2 class="projects__title">Cerblow</h2>
+                                    <a href="project-cerblow.html" class="projects__button button button__small">
+                                        <i class="ri-eye-2-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/e2c/P1060507-thumbnail.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Audiovisuel</span>
+                                    <h2 class="projects__title">Série E2C</h2>
+                                    <a href="project-e2c.html" class="projects__button button button__small">
+                                        <i class="ri-eye-2-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/shifumi/mockup-shifumi-thumbnail.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web</span>
+                                    <h2 class="projects__title">ShiFuMi123</h2>
+                                    <a href="project-shifumi.html" class="projects__button button button__small">
+                                        <i class="ri-eye-2-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/athenes/mockup-statue-2-thumbnail.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Graphisme</span>
+                                    <h2 class="projects__title">Athènes dans le métro</h2>
+                                    <a href="project-athenes.html" class="projects__button button button__small">
+                                        <i class="ri-eye-2-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/ldc/extrait-match-entre-copain-thumbnail.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Audiovisuel</span>
+                                    <h2 class="projects__title">LdC 2021</h2>
+                                    <a href="project-ldc.html" class="projects__button button button__small">
+                                        <i class="ri-eye-2-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/efficio/mockup-profil-edgar-thumbnail.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Graphisme</span>
+                                    <h2 class="projects__title">cf. Efficio</h2>
+                                    <a href="project-efficio.html" class="projects__button button button__small">
+                                        <i class="ri-eye-2-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>    
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h2 class="skills__title">Graphisme</h2>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">Illustrator</h2>
+                                            <span class="skills__level">Logiciel préféré</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">Indesign</h2>
+                                            <span class="skills__level">Intermédiaire</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">Photoshop</h2>
+                                            <span class="skills__level">Bases solides</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">XD</h2>
+                                            <span class="skills__level">Intermédiaire</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">Figma</h2>
+                                            <span class="skills__level">Intermédiaire</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">Canva</h2>
+                                            <span class="skills__level">Pour la collègue CM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h2 class="skills__title">Intégration web</h2>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">HTML5</h2>
+                                            <span class="skills__level">Bases solides +</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">CSS3</h2>
+                                            <span class="skills__level">Bases solides +</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">Javascript</h2>
+                                            <span class="skills__level">Keep trying</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">VSCode</h2>
+                                            <span class="skills__level">Outil de prédilection</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">Github</h2>
+                                            <span class="skills__level">Bases</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h2 class="skills__title">Audiovisuel</h2>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">Premiere pro</h2>
+                                            <span class="skills__level">Intermédiaire</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">After Effects</h2>
+                                            <span class="skills__level">Intermédiaire</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">Animate</h2>
+                                            <span class="skills__level">Bases</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">Reaper</h2>
+                                            <span class="skills__level">Bases</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h2 class="skills__title">Illustration</h2>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">Graphites</h2>
+                                            <span class="skills__level">Technique fav'</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">Fusain</h2>
+                                            <span class="skills__level">Intermédiaire</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">Acrylique</h2>
+                                            <span class="skills__level">Pratique régulière</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h2 class="skills__name">Procreate</h2>
+                                            <span class="skills__level">Intermédiaire</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+               Alice TIFFAY 2022 - D'après le modèle de &#169;Bedimcode. Tous droits réservés
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

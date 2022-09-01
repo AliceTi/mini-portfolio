@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta description="PORTFOLIO - Alice TIFFAY, Graphiste multimédia | alice.tiffay@gmail.com">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon-perso.svg" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/styles-ldc.css">
+
+        <title>PORTFOLIO - LdC 2021 </title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Close button -->
+            <a href="index.html"><i class="ri-close-line back-home"></i></a>
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="container">
+                <section class="projects__subtitle">
+                    <h1>Audiovisuel</h1>
+                </section>
+                <section class="carrousel-container">
+                    <article class="carrousel">
+                        <div id="carrousel-item-one" class="carrousel-item">
+                            <div class="arrows">
+                                <i class="ri-arrow-right-circle-line big-arrows" onclick="showTwo()"></i>
+                            </div>
+                        </div>
+                        
+                        <div id="carrousel-item-two" class="carrousel-item">
+                            <video autoplay muted loop controls><source  src="assets/img/ldc/montage_amant-dans-le-placard.mp4"></video>
+                            <div class="arrows">
+                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showOne()"></i>
+                                <i class="ri-arrow-right-circle-line big-arrows" onclick="showThree()"></i>
+                            </div>
+                        </div>
+
+                        <div id="carrousel-item-three" class="carrousel-item">
+                            <video autoplay muted loop controls><source  src="assets/img/ldc/montage_doublage-americain.mp4"></video>
+                            <div class="arrows">
+                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showTwo()"></i>
+                                <i class="ri-arrow-right-circle-line big-arrows" onclick="showFour()"></i>
+                            </div>
+                        </div>
+
+                        <div id="carrousel-item-four" class="carrousel-item">
+                            <video autoplay muted loop controls><source  src="assets/img/ldc/montage_match-entre-copains.mp4"></video>
+                            <div class="arrows">
+                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showThree()"></i>
+                                <i class="ri-arrow-right-circle-line big-arrows" onclick="showFive()"></i>
+                            </div>
+                        </div>
+
+                        <div id="carrousel-item-five" class="carrousel-item">
+                            <video autoplay muted loop controls><source  src="assets/img/ldc/montage_match-parfait.mp4"></video>
+                            <div class="arrows">
+                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showFour()"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="nav-dots">
+                            <div id="progress-dots">
+                                <i id="dot-one" class="ri-checkbox-blank-circle-fill navigation small-circle" onclick="showOne()"></i>
+                                <i id="dot-two" class="ri-checkbox-blank-circle-line navigation small-circle" onclick="showTwo()"></i>
+                                <i id="dot-three" class="ri-checkbox-blank-circle-line navigation small-circle" onclick="showThree()"></i>
+                                <i id="dot-four" class="ri-checkbox-blank-circle-line navigation small-circle" onclick="showFour()"></i>
+                                <i id="dot-five" class="ri-checkbox-blank-circle-line navigation small-circle" onclick="showFive()"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="description">
+                        <h2>LdC 2021</h2>
+                        <h3>En trinome - Projet professionnel</h3>
+                        <br>
+                        <p>EFFICIO se positionne pour la Ligue des Champions 2021.</p>
+                        <br>
+                        <p>Nombreux sont les supporters de football parmis notre cible. Le contenu vidéo étant un support qui nous démarque de nos concurrents, nous avons décidé de tourner une série de vidéos sur la thématique du football. La diversité des tons abordés nous permet, en fonction des retours, de déterminer quel ligne éditoriale correspond le mieux à notre audience cible. Nous avons mobilisés nos collègues qui se sont amusés à entrer des rôles que notre équipe de commmunication interne avait rédigés et ont pris plaisir à se laisser guider par mes soins tout au long du tournage.</p>
+                    </article>
+                </section>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <div id="navigation-container">
+                <div><a href="project-athenes.html" class="navigation"><i class="ri-arrow-drop-left-line"></i><p>Athènes dans le métro</p></a></div>
+                <div><a href="project-efficio.html" class="navigation"><p>cf. Efficio</p><i class="ri-arrow-drop-right-line"></i></a></div>
+            </div>
+            <span class="footer__copy">
+               Alice TIFFAY 2022 - D'après le modèle de &#169;Bedimcode. Tous droits réservés
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        <!--=============== CARROUSEL JS ===============-->
+        <script src="assets/js/carrousel.js"></script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+#carrousel-item-one{
+  background-image: url(../img/athenes/prez-anim-athenes.gif);
+  background-size: cover;
+  background-position: center;
+}
+#carrousel-item-one .arrows{
+  color: var(--title-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#carrousel-item-two{
+  background-image: url(../img/athenes/Affiches-07.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+#carrousel-item-three{
+  background-image: url(../img/athenes/Affiches-10.jpg);
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+#carrousel-item-four{
+  background-image: url(../img/athenes/story.mp4);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+  position: relative;
+}
+#carrousel-item-four video{
+  position: absolute;
+  top: 0;
+  left: 20%;
+  z-index: -1;
+  width: auto;
+  height: 100%;
+
+}
+
+h1{
+  color: var(--text-color);
+}

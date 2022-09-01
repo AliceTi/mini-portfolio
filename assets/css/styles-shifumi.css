@@ -1,0 +1,30 @@
+#carrousel-item-one{
+  background-image: url(../img/shifumi/prez-anim-shifumi.gif);
+  background-size: cover;
+  background-position: center;
+}
+#carrousel-item-one .arrows{
+  color: var(--title-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#carrousel-item-two{
+  background-image: url(../img/shifumi/mockup-shifumi-3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+
+#carrousel-item-three{
+  background-image: url(../img/shifumi/mockup-shifumi-2.jpg);
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+
+h1{
+  color: var(--text-color);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta description="PORTFOLIO - Alice TIFFAY, Graphiste multimédia | alice.tiffay@gmail.com">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon-perso.svg" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/styles-athenes.css">
+
+        <title>PORTFOLIO - Athènes dans le métro </title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Close button -->
+            <a href="index.html"><i class="ri-close-line back-home"></i></a>
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="container">
+                <section class="projects__subtitle">
+                    <h1>Graphisme</h1>
+                </section>
+                <section class="carrousel-container">
+                    <article class="carrousel">
+                        <div id="carrousel-item-one" class="carrousel-item">
+                            <div class="arrows">
+                                <i class="ri-arrow-right-circle-line big-arrows" onclick="showTwo()"></i>
+                            </div>
+                        </div>
+                        
+                        <div id="carrousel-item-two" class="carrousel-item">
+                            <div class="arrows">
+                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showOne()"></i>
+                                <i class="ri-arrow-right-circle-line big-arrows" onclick="showThree()"></i>
+                            </div>
+                        </div>
+
+                        <div id="carrousel-item-three" class="carrousel-item">
+                            <div class="arrows">
+                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showTwo()"></i>
+                                <i class="ri-arrow-right-circle-line big-arrows" onclick="showFour()"></i>
+                            </div>
+                        </div>
+
+                        <div id="carrousel-item-four" class="carrousel-item">
+                                <video autoplay muted loop controls><source src="assets/img/athenes/story.mp4"></video>
+                            <div class="arrows">
+                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showThree()"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="nav-dots">
+                            <div id="progress-dots">
+                                <i id="dot-one" class="ri-checkbox-blank-circle-fill navigation small-circle" onclick="showOne()"></i>
+                                <i id="dot-two" class="ri-checkbox-blank-circle-line navigation small-circle" onclick="showTwo()"></i>
+                                <i id="dot-three" class="ri-checkbox-blank-circle-line navigation small-circle" onclick="showThree()"></i>
+                                <i id="dot-four" class="ri-checkbox-blank-circle-line navigation small-circle" onclick="showFour()"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="description">
+                        <h2>Athènes dans le métro</h2>
+                        <h3>En binome - Projet scolaire</h3>
+                        <br>
+                        <p>La région d'Athènes invite les parisiens à la découvrir sous un nouveau jour.</p>
+                        <br>
+                        <p>Nous souhaitons mettre en avant la vie de la Région d’Athènes et la faire sortir de son image de "région musée" en proposant des activités touristiques qui sortent du contexte historique. Pour parler à notre cible, nous utilisons un référence bien connué en France : «Martine à ...». Concernant l’accroche, nous avons misé sur une expression directement issue de la mythologie grècque : «être médusé» pour parler d’un état de stupéfaction. La région d’Athènes n’est pas que des statues et des monuments Antique. Athènes c’est aussi des plages, des jardins, une vie nocturne...</p>
+                    </article>
+                </section>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <div id="navigation-container">
+                <div><a href="project-shifumi.html" class="navigation"><i class="ri-arrow-drop-left-line"></i><p>ShiFuMi123</p></a></div>
+                <div><a href="project-ldc.html" class="navigation"><p>LdC 2021</p><i class="ri-arrow-drop-right-line"></i></a></div>
+            </div>
+            <span class="footer__copy">
+               Alice TIFFAY 2022 - D'après le modèle de &#169;Bedimcode. Tous droits réservés
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        <!--=============== CARROUSEL JS ===============-->
+        <script src="assets/js/carrousel.js"></script>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta description="PORTFOLIO - Alice TIFFAY, Graphiste multimédia | alice.tiffay@gmail.com">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon-perso.svg" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/styles-efficio.css">
+
+        <title>PORTFOLIO - cf. Efficio </title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Close button -->
+            <a href="index.html"><i class="ri-close-line back-home"></i></a>
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="container">
+                <section class="projects__subtitle">
+                    <h1>Graphisme</h1>
+                </section>
+                <section class="carrousel-container">
+                    <article class="carrousel">
+                        <div id="carrousel-item-one" class="carrousel-item">
+                            <div class="arrows">
+                                <i class="ri-arrow-right-circle-line big-arrows" onclick="showTwo()"></i>
+                            </div>
+                        </div>
+                        
+                        <div id="carrousel-item-two" class="carrousel-item">
+                            <div class="arrows">
+                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showOne()"></i>
+                                <i class="ri-arrow-right-circle-line big-arrows" onclick="showThree()"></i>
+                            </div>
+                        </div>
+
+                        <div id="carrousel-item-three" class="carrousel-item">
+                            <div class="arrows">
+                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showTwo()"></i>
+                                <i class="ri-arrow-right-circle-line big-arrows" onclick="showFour()"></i>
+                            </div>
+                        </div>
+
+                        <div id="carrousel-item-four" class="carrousel-item">
+                            <div class="arrows">
+                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showThree()"></i>
+                                <i class="ri-arrow-right-circle-line big-arrows" onclick="showFive()"></i>
+                            </div>
+                        </div>
+
+                        <div id="carrousel-item-five" class="carrousel-item">
+                            <div class="arrows">
+                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showFour()"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="nav-dots">
+                            <div id="progress-dots">
+                                <i id="dot-one" class="ri-checkbox-blank-circle-fill navigation small-circle" onclick="showOne()"></i>
+                                <i id="dot-two" class="ri-checkbox-blank-circle-line navigation small-circle" onclick="showTwo()"></i>
+                                <i id="dot-three" class="ri-checkbox-blank-circle-line navigation small-circle" onclick="showThree()"></i>
+                                <i id="dot-four" class="ri-checkbox-blank-circle-line navigation small-circle" onclick="showFour()"></i>
+                                <i id="dot-five" class="ri-checkbox-blank-circle-line navigation small-circle" onclick="showFive()"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="description">
+                        <h2>cf. Efficio</h2>
+                        <h3>En trinome - Projet professionnel</h3>
+                        <br>
+                        <p>Le tout nouveau service de communication interne d'EFFICIO se cherche une identité</p>
+                        <br>
+                        <p>EFFICIO est une entreprise de courtage en prêts immobiliers qui souhaite construire son identité de marque pour se positionner sur les réseaux sociaux et agrandir leur portée organique. Munis de la carte blanche de notre patron, nous avons pu essayer un grand nombre de tons avant de trouver ce qui nous correspond le mieux : l'expertise. Aujourd'hui nous développons des supports dans le but d'être référents dans notre domaine. Il s'agit donc pour ma part de mettre en image cette nouvelle ligne éditoriale.</p>
+                    </article>
+                </section>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <div id="navigation-container">
+                <div><a href="project-ldc.html" class="navigation"><i class="ri-arrow-drop-left-line"></i><p>LdC 2021</p></a></div>
+            </div>
+            <span class="footer__copy">
+               Alice TIFFAY 2022 - D'après le modèle de &#169;Bedimcode. Tous droits réservés
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        <!--=============== CARROUSEL JS ===============-->
+        <script src="assets/js/carrousel.js"></script>
+    </body>
+</html>
