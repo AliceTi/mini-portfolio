@@ -63,11 +63,11 @@
                     </article>
                     <article id="description">
                         <h2>ShiFuMi123</h2>
-                        <h3>En binome - Projet scolaire</h3>
+                        <h3>En binôme - Projet scolaire</h3>
                         <br>
                         <p>À vos moteurs de recherche !</p>
                         <br>
-                        <p>Lors d'un mini hackathon nous avons eu l'occasion de mettre en pratique nos fraichement acquises compétences en HTML, CSS et Javascript pour produire un jeu de Pierre, Feuille, Ciseaux. Inspirés par le vapor wave, nous nous retrouvons dans un jeu dont nous sommes le héro en 8bits et nous devons éradiquer une horde d'ennemis de grande stature. Vous avez envie de tenter votre chance ? Retrouvez ce projet ici : <a href="https://aliceti.github.io/shifumi/">SHIFUMI123</a></p>
+                        <p>Lors d'un mini hackathon nous avons eu l'occasion de mettre en pratique nos fraichement acquises compétences en HTML, CSS et Javascript pour produire un jeu de Pierre, Feuille, Ciseaux. Inspirés par le vapor wave, nous nous retrouvons dans un jeu dont nous sommes le héro en 8bits et nous devons éradiquer une horde d'ennemis de grande stature. Vous avez envie de tenter votre chance ? Retrouvez ce projet ici : <a href="https://aliceti.github.io/shifumi/" target="new">SHIFUMI123</a></p>
                     </article>
                 </section>
             </section>
@@ -91,6 +91,45 @@
         <script src="assets/js/main.js"></script>
 
         <!--=============== CARROUSEL JS ===============-->
-        <script src="assets/js/carrousel.js"></script>
+        <script>
+            let one = document.getElementById('carrousel-item-one');
+            let two = document.getElementById('carrousel-item-two');
+            let three = document.getElementById('carrousel-item-three');
+
+            let progressOne = document.getElementById('dot-one');
+            let progressTwo = document.getElementById('dot-two');
+            let progressThree = document.getElementById('dot-three');
+
+            function showOne(){
+                one.style.display = 'flex';
+                two.style.display = 'none';
+                three.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showTwo(){
+                one.style.display = 'none';
+                two.style.display = 'flex';
+                three.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showThree(){
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'flex';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+            }
+
+        </script>
     </body>
 </html>

@@ -41,34 +41,26 @@
                         </div>
                         
                         <div id="carrousel-item-two" class="carrousel-item">
-                            <video autoplay muted loop controls><source  src="assets/img/ldc/montage_amant-dans-le-placard.mp4"></video>
-                            <div class="arrows">
-                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showOne()"></i>
+                            <i class="ri-arrow-left-circle-line big-arrows" onclick="showOne()"></i>
+                            <video controls><source  src="assets/img/ldc/montage_amant-dans-le-placard.mp4"></video>
                                 <i class="ri-arrow-right-circle-line big-arrows" onclick="showThree()"></i>
-                            </div>
                         </div>
 
                         <div id="carrousel-item-three" class="carrousel-item">
-                            <video autoplay muted loop controls><source  src="assets/img/ldc/montage_doublage-americain.mp4"></video>
-                            <div class="arrows">
-                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showTwo()"></i>
+                            <i class="ri-arrow-left-circle-line big-arrows" onclick="showTwo()"></i>
+                            <video controls><source  src="assets/img/ldc/montage_doublage-americain.mp4"></video>
                                 <i class="ri-arrow-right-circle-line big-arrows" onclick="showFour()"></i>
-                            </div>
                         </div>
 
                         <div id="carrousel-item-four" class="carrousel-item">
-                            <video autoplay muted loop controls><source  src="assets/img/ldc/montage_match-entre-copains.mp4"></video>
-                            <div class="arrows">
-                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showThree()"></i>
+                            <i class="ri-arrow-left-circle-line big-arrows" onclick="showThree()"></i>
+                            <video controls><source  src="assets/img/ldc/montage_match-entre-copains.mp4"></video>
                                 <i class="ri-arrow-right-circle-line big-arrows" onclick="showFive()"></i>
-                            </div>
                         </div>
 
                         <div id="carrousel-item-five" class="carrousel-item">
-                            <video autoplay muted loop controls><source  src="assets/img/ldc/montage_match-parfait.mp4"></video>
-                            <div class="arrows">
-                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showFour()"></i>
-                            </div>
+                            <i class="ri-arrow-left-circle-line big-arrows" onclick="showFour()"></i>
+                            <video controls><source  src="assets/img/ldc/montage_match-parfait.mp4"></video>
                         </div>
                         
                         <div class="nav-dots">
@@ -83,11 +75,11 @@
                     </article>
                     <article id="description">
                         <h2>LdC 2021</h2>
-                        <h3>En trinome - Projet professionnel</h3>
+                        <h3>En trinôme - Projet professionnel</h3>
                         <br>
                         <p>EFFICIO se positionne pour la Ligue des Champions 2021.</p>
                         <br>
-                        <p>Nombreux sont les supporters de football parmis notre cible. Le contenu vidéo étant un support qui nous démarque de nos concurrents, nous avons décidé de tourner une série de vidéos sur la thématique du football. La diversité des tons abordés nous permet, en fonction des retours, de déterminer quel ligne éditoriale correspond le mieux à notre audience cible. Nous avons mobilisés nos collègues qui se sont amusés à entrer des rôles que notre équipe de commmunication interne avait rédigés et ont pris plaisir à se laisser guider par mes soins tout au long du tournage.</p>
+                        <p>Nombreux sont les supporters de football parmi notre cible. Le contenu vidéo étant un support qui nous démarque de nos concurrents, nous avons décidé de tourner une série de vidéos sur la thématique du football. La diversité des tons abordés nous permet, en fonction des retours, de déterminer quel ligne éditoriale correspond le mieux à notre audience cible. Nous avons mobilisés nos collègues qui se sont amusés à entrer des rôles que notre équipe de commmunication interne avait rédigés et ont pris plaisir à se laisser guider par mes soins tout au long du tournage.</p>
                     </article>
                 </section>
             </section>
@@ -111,6 +103,88 @@
         <script src="assets/js/main.js"></script>
 
         <!--=============== CARROUSEL JS ===============-->
-        <script src="assets/js/carrousel.js"></script>
+        <script>
+            let one = document.getElementById('carrousel-item-one');
+            let two = document.getElementById('carrousel-item-two');
+            let three = document.getElementById('carrousel-item-three');
+            let four = document.getElementById('carrousel-item-four');
+            let five = document.getElementById('carrousel-item-five');
+
+            let progressOne = document.getElementById('dot-one');
+            let progressTwo = document.getElementById('dot-two');
+            let progressThree = document.getElementById('dot-three');
+            let progressFour = document.getElementById('dot-four');
+            let progressFive = document.getElementById('dot-five');
+
+            function showOne(){
+                one.style.display = 'flex';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                five.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFive.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showTwo(){
+                one.style.display = 'none';
+                two.style.display = 'flex';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                five.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFive.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showThree(){
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'flex';
+                four.style.display = 'none';
+                five.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFive.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showFour(){
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'flex';
+                five.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressFive.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showFive(){
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                five.style.display = 'flex';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFive.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+            }
+        </script>
     </body>
 </html>

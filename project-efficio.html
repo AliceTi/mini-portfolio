@@ -79,11 +79,11 @@
                     </article>
                     <article id="description">
                         <h2>cf. Efficio</h2>
-                        <h3>En trinome - Projet professionnel</h3>
+                        <h3>En trinôme - Projet professionnel</h3>
                         <br>
-                        <p>Le tout nouveau service de communication interne d'EFFICIO se cherche une identité</p>
+                        <p>Le tout nouveau service de communication interne d'EFFICIO se cherche une identité !</p>
                         <br>
-                        <p>EFFICIO est une entreprise de courtage en prêts immobiliers qui souhaite construire son identité de marque pour se positionner sur les réseaux sociaux et agrandir leur portée organique. Munis de la carte blanche de notre patron, nous avons pu essayer un grand nombre de tons avant de trouver ce qui nous correspond le mieux : l'expertise. Aujourd'hui nous développons des supports dans le but d'être référents dans notre domaine. Il s'agit donc pour ma part de mettre en image cette nouvelle ligne éditoriale.</p>
+                        <p>EFFICIO est une entreprise de courtage en prêts immobiliers qui souhaite construire son identité de marque pour se positionner sur les réseaux sociaux et augmenter leur portée organique. Munis de la carte blanche de notre patron, nous avons pu essayer un grand nombre de tons avant de trouver ce qui nous correspond le mieux : l'expertise. Aujourd'hui nous développons des supports dans le but de nous positionner comme référents dans notre domaine.</p>
                     </article>
                 </section>
             </section>
@@ -106,6 +106,88 @@
         <script src="assets/js/main.js"></script>
 
         <!--=============== CARROUSEL JS ===============-->
-        <script src="assets/js/carrousel.js"></script>
+        <script>
+            let one = document.getElementById('carrousel-item-one');
+            let two = document.getElementById('carrousel-item-two');
+            let three = document.getElementById('carrousel-item-three');
+            let four = document.getElementById('carrousel-item-four');
+            let five = document.getElementById('carrousel-item-five');
+
+            let progressOne = document.getElementById('dot-one');
+            let progressTwo = document.getElementById('dot-two');
+            let progressThree = document.getElementById('dot-three');
+            let progressFour = document.getElementById('dot-four');
+            let progressFive = document.getElementById('dot-five');
+
+            function showOne(){
+                one.style.display = 'flex';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                five.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFive.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showTwo(){
+                one.style.display = 'none';
+                two.style.display = 'flex';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                five.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFive.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showThree(){
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'flex';
+                four.style.display = 'none';
+                five.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFive.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showFour(){
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'flex';
+                five.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressFive.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showFive(){
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'none';
+                five.style.display = 'flex';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFive.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+            }
+        </script>
     </body>
 </html>

@@ -55,10 +55,8 @@
                         </div>
 
                         <div id="carrousel-item-four" class="carrousel-item">
-                                <video autoplay muted loop controls><source src="assets/img/athenes/story.mp4"></video>
-                            <div class="arrows">
-                                <i class="ri-arrow-left-circle-line big-arrows" onclick="showThree()"></i>
-                            </div>
+                            <i class="ri-arrow-left-circle-line big-arrows" onclick="showThree()"></i>
+                                <video controls><source src="assets/img/athenes/story.mp4"></video>
                         </div>
                         
                         <div class="nav-dots">
@@ -72,11 +70,11 @@
                     </article>
                     <article id="description">
                         <h2>Athènes dans le métro</h2>
-                        <h3>En binome - Projet scolaire</h3>
+                        <h3>En binôme - Projet scolaire</h3>
                         <br>
                         <p>La région d'Athènes invite les parisiens à la découvrir sous un nouveau jour.</p>
                         <br>
-                        <p>Nous souhaitons mettre en avant la vie de la Région d’Athènes et la faire sortir de son image de "région musée" en proposant des activités touristiques qui sortent du contexte historique. Pour parler à notre cible, nous utilisons un référence bien connué en France : «Martine à ...». Concernant l’accroche, nous avons misé sur une expression directement issue de la mythologie grècque : «être médusé» pour parler d’un état de stupéfaction. La région d’Athènes n’est pas que des statues et des monuments Antique. Athènes c’est aussi des plages, des jardins, une vie nocturne...</p>
+                        <p>Nous souhaitons mettre en avant la vie de la Région d’Athènes et la faire sortir de son image de "région musée" en proposant des activités touristiques qui sortent du contexte historique. Pour parler à notre cible, nous utilisons une référence bien connue en France : «Martine à ...». Concernant l’accroche, nous avons misé sur une expression directement issue de la mythologie grecque : «être médusé» pour parler d’un état de stupéfaction. La région d’Athènes n’est pas que des statues et des monuments Antiques. Athènes c’est aussi des plages, des jardins, une vie nocturne...</p>
                     </article>
                 </section>
             </section>
@@ -100,6 +98,65 @@
         <script src="assets/js/main.js"></script>
 
         <!--=============== CARROUSEL JS ===============-->
-        <script src="assets/js/carrousel.js"></script>
+        <script>
+            let one = document.getElementById('carrousel-item-one');
+            let two = document.getElementById('carrousel-item-two');
+            let three = document.getElementById('carrousel-item-three');
+            let four = document.getElementById('carrousel-item-four');
+
+            let progressOne = document.getElementById('dot-one');
+            let progressTwo = document.getElementById('dot-two');
+            let progressThree = document.getElementById('dot-three');
+            let progressFour = document.getElementById('dot-four');
+
+            function showOne(){
+                one.style.display = 'flex';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showTwo(){
+                one.style.display = 'none';
+                two.style.display = 'flex';
+                three.style.display = 'none';
+                four.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showThree(){
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'flex';
+                four.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showFour(){
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'flex';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+            }
+
+        </script>
     </body>
 </html>

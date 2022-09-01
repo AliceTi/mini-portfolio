@@ -28,3 +28,15 @@
 h1{
   color: var(--text-color);
 }
+
+#description a{
+  color: var(--text-color);
+  font-weight: bold;
+}
+#description a:hover{
+  color: var(--first-color);
+}
+#description a:active{
+  color: var(--text-color);
+  font-weight: bold;
+}

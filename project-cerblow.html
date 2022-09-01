@@ -71,11 +71,11 @@
                     </article>
                     <article id="description">
                         <h2>Cerblow</h2>
-                        <h3>En trinome - Projet scolaire</h3>
+                        <h3>En trinôme - Projet scolaire</h3>
                         <br>
                         <p>Félix GODEFROY, graphiste basé à Lille, intervient à l'occasion d'un workshop "Typographie musicale".</p>
                         <br>
-                        <p>La musique est le résultat de la déformation d'une onde dans l'air. Pour ce projet nous voulions travailler la lettre comme objet de diffusion. Inspirées par la notion de bruit, nous avons voulu rendre cacauphonique la police d'écriture CERVO et la rendre explosive. Après de longues tentatives à travers divers médiums, encres et dissolvants, naquit CERBLOW.</p>
+                        <p>Le son, et donc la musique, est le résultat de la propagation d'une onde qui déforme l'air avant d'atteindre le circuit de notre oreille. Pour ce projet nous voulions travailler la lettre comme objet de diffusion. Inspirées par la notion de bruit, nous avons voulu rendre cacauphonique la police d'écriture CERVO et la rendre explosive. Après de longues tentatives à travers divers médiums, encres et dissolvants, naquit CERBLOW.</p>
                     </article>
                 </section>
             </section>
@@ -99,6 +99,65 @@
         <script src="assets/js/main.js"></script>
 
         <!--=============== CARROUSEL JS ===============-->
-        <script src="assets/js/carrousel.js"></script>
+        <script>
+            let one = document.getElementById('carrousel-item-one');
+            let two = document.getElementById('carrousel-item-two');
+            let three = document.getElementById('carrousel-item-three');
+            let four = document.getElementById('carrousel-item-four');
+
+            let progressOne = document.getElementById('dot-one');
+            let progressTwo = document.getElementById('dot-two');
+            let progressThree = document.getElementById('dot-three');
+            let progressFour = document.getElementById('dot-four');
+
+            function showOne(){
+                one.style.display = 'flex';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showTwo(){
+                one.style.display = 'none';
+                two.style.display = 'flex';
+                three.style.display = 'none';
+                four.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showThree(){
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'flex';
+                four.style.display = 'none';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+            }
+
+            function showFour(){
+                one.style.display = 'none';
+                two.style.display = 'none';
+                three.style.display = 'none';
+                four.style.display = 'flex';
+
+                progressOne.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressTwo.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressThree.setAttribute("class","ri-checkbox-blank-circle-line navigation small-circle");
+                progressFour.setAttribute("class","ri-checkbox-blank-circle-fill navigation small-circle");
+            }
+
+        </script>
     </body>
 </html>

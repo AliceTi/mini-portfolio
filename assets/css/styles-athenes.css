@@ -29,20 +29,12 @@
 }
 
 #carrousel-item-four{
-  background-image: url(../img/athenes/story.mp4);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   display: none;
   position: relative;
 }
 #carrousel-item-four video{
-  position: absolute;
-  top: 0;
-  left: 20%;
-  z-index: -1;
-  width: auto;
   height: 100%;
+  padding-left: 5%;
 
 }
 
